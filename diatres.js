@@ -1,11 +1,22 @@
-1. Se quer seguir para área de Front-End ou seguir para a área de Back-End.
+const area = prompt("Qual area você quer seguir? \n1 - Front-End \n2 - Back-End");
+let linguagem = "";
+if (area == 1){
+    linguagem = prompt("O que você quer aprender? \n1 - React \n2 - Vue");
+}
+else if (area == 2){
+    linguagem = prompt("O que você quer aprender? \n1 - C# \n2 - Java");
+}
+else {
+    alert("Você não inseriu uma área válida!");
+}
 
-2. Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.
+const especialidadeOuFullstack = prompt("O que você quer fazer \n1 - Seguir se especializando na área escolhida \n2 - Seguir se desenvolvendo para se tornar Fullstack");
 
-3. Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack. Você deve exibir na tela uma mensagem específica para cada escolha.
+let pergunta = prompt("Tem mais alguma tecnologia que você gostaria de aprender? \n1 - Sim \n2 - Não");
+while (pergunta == 1){
+    let Tecnologia = prompt("Qual?");
+    alert((Tecnologia) + " é realmente uma tecnologia muito legal!")
+    pergunta = prompt("Tem mais alguma tecnologia que você gostaria de aprender? \n1 - Sim \n2 - Não");
+}
 
-4. Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer. Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta: “Tem mais alguma tecnologia que você gostaria de aprender?”, continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão. E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.
-
-O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir aprender e se desenvolver na área de programação.
-
-Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista de aprendizado.
+alert("OBRIGADO!!!")
